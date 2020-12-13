@@ -1,0 +1,106 @@
+body {
+    justify-content: center;
+    align-items: center;
+    background: #f7f7f7;
+    display: flex;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+.progress_section {
+    float: left;
+    margin-left: 9%;
+    width: 35%;
+}
+.progress_section > li {
+    list-style: none;
+}
+.progress_section > li > p {
+    font-size: 15px;
+    font-weight: 300;
+    color: #333;
+    text-align: left;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+.progress1 {
+    float: left;
+    background: rgba(153, 153, 153, 0.1);
+    justify-content: flex-start;
+    border-radius: 100px;
+    align-items: center;
+    position: relative;
+    padding: 0 5px;
+    display: flex;
+    height: 20px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+.progress2 {
+    float: left;
+    background: rgba(153, 153, 153, 0.1);
+    justify-content: flex-start;
+    border-radius: 100px;
+    align-items: center;
+    position: relative;
+    padding: 0 5px;
+    display: flex;
+    height: 20px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+.progress3 {
+    float: left;
+    background: rgba(153, 153, 153, 0.1);
+    justify-content: flex-start;
+    border-radius: 100px;
+    align-items: center;
+    position: relative;
+    padding: 0 5px;
+    display: flex;
+    height: 20px;
+    width: 100%;
+}
+  
+.progress-value1 {
+    animation: load1 4s normal forwards;
+    box-shadow: 0 10px 40px -10px #D9D9D9;
+    border-radius: 100px;
+    background: linear-gradient(45deg, #FF60A7, #dd2476);
+    height: 10px;
+    width: 0;
+}
+@keyframes load1 {
+    0% { width: 0; }
+    100% { width: 65%; }
+}
+.progress-value2 {
+    animation: load2 4s normal forwards;
+    box-shadow: 0 10px 40px -10px #D9D9D9;
+    border-radius: 100px;
+    background: linear-gradient(45deg, #FF9345, #ff512f);
+    height: 10px;
+    width: 0;
+}
+@keyframes load2 {
+    0% { width: 0; }
+    100% { width: 20%; }
+}
+.progress-value3 {
+    animation: load3 4s normal forwards;
+    box-shadow: 0 10px 40px -10px #D9D9D9;
+    border-radius: 100px;
+    background: linear-gradient(45deg, #7BCCE8, #00A6E0);
+    height: 10px;
+    width: 0;
+}
+  
+@keyframes load3 {
+    0% { width: 0; }
+    100% { width: 15%; }
+}
+.progress_vid {
+    width: 500px;
+    margin-left: 0;
+    margin-right: 30px;
+}

@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,400,700,900');
+
+#section1 {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(-70deg, #FF512F, #dd2476, #FF512F);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+}
+
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+.effect-wrap {
+    position: relative;
+    width: 100vw; height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 1000px;
+}
+.effect8 {
+    position: relative;
+    width: 100%; height: 100%;
+}
+.effect8 img {
+    width: 100%;
+    transition: all 0.6s ease 0.2s;
+}
+.effect8 figcaption {
+    top: 0;
+    position: absolute;
+    bottom: 0%; left: 0; right: 10%;
+    width: 100%;
+    padding: 5% 5% 0% 5%;
+    box-sizing: border-box;
+    z-index: 1;
+    line-height: 1.7em;
+    color: #fff;
+    font-size: 20px;
+    opacity:1;
+    transition: all 0.5s ease;
+}
+.effect8 figcaption h3 {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 24px;
+}
+.effect8 figcaption p {
+    font-weight: 200;
+}
+figure.front {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.effect8 .front {
+    position: absolute; left: 0; top: 0;
+    transform : rotateY(0deg);
+    width : 100%;
+    height : 100%;
+    z-index: 10;
+    transition : transform 1s;
+    backface-visibility : hidden;
+}
+.effect8 .back {
+    position: absolute; left: 0; top: 0;
+    transform : rotateY(-180deg);
+    width : 100%;
+    height : 100%;
+    cursor : pointer;
+    transition : transform 1s;
+    backface-visibility : hidden;
+}
+.effect8:hover .front {
+    transform : rotateY(180deg)
+}
+
+.effect8:hover .back {
+    transform : rotateY(0);
+}
+#slide_section {
+    background-image: url('../images/background5.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+}
+#end_section {
+    background-image: url('../images/background6.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+#p_app {
+    position: absolute;
+    float: left;
+    text-align: left;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    margin-left: 12%;
+    padding-top: 5%;
+}
+#p_app2 {
+    position: absolute;
+    float: left;
+    text-align: left;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 400;
+    margin-left: 12%;
+    padding-top: 8%
+}
+.fun_section5 {
+    float: left;
+    text-align: left;
+    margin-left: 14%;
+    margin-top: 3%;
+}
+.fun2_tit {
+    color: #dd2476;
+    font-size: 55px;
+    font-weight: 400;
+}
+.fun2_tit2 {
+    color: #333;
+    font-size: 55px;
+    font-weight: 300;
+}
+.fun2_de {
+    margin-top: 10px;
+    color: #333;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.5;
+}

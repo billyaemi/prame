@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,400,700,900');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #333;
+    margin: 0;
+}
+.effect-wrap {
+    width: 100vw; height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 50em;
+}
+.effect7 {
+    position: relative;
+    margin-top: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+    margin-right: 0;
+    width: 100%; height: 100%;
+}
+.effect7 img {
+    width: 100%;
+    filter: saturate(90%);
+    transition: all 0.6s ease 0.2s;
+    backface-visibility: hidden;
+}
+.effect7 figcaption {
+    position: absolute;
+    top: 50%; left: 0;
+    width: 100%;
+    padding: 12%;
+    box-sizing: border-box;
+    z-index: 1;
+    line-height: 1.7em;
+    color: #fff;
+    font-size: 20px;
+    opacity:1;
+    transition: all 0.5s ease;
+    transform: rotatex(90deg) translate(0, -50%);
+    transform-origin: 0% 0%;
+}
+.effect7 figcaption h3 {
+    font-weight: 800;
+    text-transform: uppercase;
+}
+.effect7 figcaption p {
+    font-weight: 500;;
+}
+.effect7 figcaption .read {
+    border: 2px solid #fff;
+    padding: 0.5em 1em;
+    font-size: 0.8em;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+.effect7 figcaption .read:hover {
+    background: #fff;
+    color: #000;
+}
+
+.effect7:hover img  {
+    transform: rotatex(-180deg);
+    opacity: 0;
+    transition-delay: 0;
+}
+.effect7:hover figcaption.back {
+    transform: rotatex(0deg) translate(0, -50%);
+    opacity: 1;
+    transition-delay: 0.35s;
+}
+#circle1 {
+    background-color: none;
+    border:1px solid #DD2476;
+    width:180px; height:180px;
+    border-radius:50%;
+    text-align:center;
+    margin:0 auto;
+    vertical-align:middle;
+    float: left;
+    margin-right: 10px;
+    display: table;
+    font-weight: 300;
+    margin-bottom: 5%;
+    margin-left: 0;
+}
+#circle2 {
+    background-color: none;
+    border:1px solid #FF512F;
+    width:180px; height:180px;
+    border-radius:50%;
+    text-align:center;
+    margin:0 auto;
+    vertical-align:middle;
+    float: left;
+    display: table;
+    margin-bottom: 5%;
+    margin-right: 10px;
+}
+#circle1 > p {
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 25px; color: #DD2476;
+    font-weight: 300;
+}
+#circle2 > p {
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 25px; color: #FF512F;
+    font-weight: 300;
+}
+#plus {
+    float: left;
+    text-align: center;
+    display: table;
+    width: 180px;
+    height: 180px;
+    margin-right: 10px;
+    margin-bottom: 5%;
+}
+#plus > p {
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 30px;
+    font-weight: 300;
+}
+#circle_section {
+    display: flex;
+    width: 100%;
+    height: 400px;
+    align-items: center;
+    justify-content: center;
+}
+#arrow {
+    float: left;
+    text-align: center;
+    display: table;
+    width: 200px;
+    height: 200px;
+    margin-right: 10px;
+    margin-bottom: 5%;
+}
+#arrow > p {
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 50px;
+    font-weight: 300;
+}
+#circle3 {
+    background: linear-gradient( 45deg, #FF512F, #DD2476 );;
+    width:180px; height:180px;
+    border-radius:50%;
+    text-align:center;
+    margin:0 auto;
+    vertical-align:middle;
+    float: left;
+    margin-right: 10px;
+    display: table;
+    font-weight: 300;
+    margin-bottom: 5%;
+}
+#circle3 > p {
+    display: table-cell;
+    vertical-align: middle;
+}
+#circle3 > p.cir_u {
+    font-size: 25px; color: #fff;
+    font-weight: 300;
+}
+#fun_section {
+    width: 100%;
+    height: 140px;
+    text-align: center;
+}
+.fun_tit1 {
+    color: #333;
+    font-size: 55px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+.fun_tit2 {
+    color: #DD2476;
+    font-size: 55px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.fun_de {
+    color: #333;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+#fun_section2 {
+    width: 100%;
+    /* height: 400px; */
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    bottom: 0;
+}
+.fun_img {
+    text-align: center;
+    vertical-align: bottom;
+    position: absolute;
+    bottom: 0;
+}
+.touch_img1 {
+    bottom: 0;
+    vertical-align: bottom;
+    position: absolute;
+    right: 0;
+    margin-right: 22%;
+}
+.touch_img2 {
+    top: 0;
+    vertical-align: top;
+    position: absolute;
+    right: 0;
+    margin-right: 6%;
+}
+.copyright {
+    font-size: 12px;
+    color: white;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+.cir_loop {
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('../images/background4.jpg');
+    position: relative;
+}
+.cir_section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+.cir_tit {
+    padding-top: 20%;
+    font-size: 50px;
+    font-weight: 400;
+    color: #333;
+    margin-bottom: 10px;
+}
+.cir_tit2 {
+    font-size: 50px;
+    font-weight: 400;
+    color: #333;
+}
+.cir_de {
+    margin-top: 15px;
+    color: #333;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 1.7;
+}
+#footer2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ul.name {
+    width: 100%;
+}
+.name_shin, .name_lee, .name_won {
+    float: left;
+    margin: 50px 50px 30px 60px;
+    text-align: left;
+}
+li.name_shin > h3 {
+    font-weight: 400;
+    font-size: 15px;
+    color: #fff;
+    padding-bottom: 7px;
+    letter-spacing: 1px;
+}
+li.name_shin > p {
+    font-weight: 300;
+    font-size: 12px;
+    color: #fff;
+    padding-bottom: 7px;
+    letter-spacing: 1px;
+}
+li.name_lee > h3 {
+    font-weight: 400;
+    font-size: 15px;
+    color: #fff;
+    padding-bottom: 7px;
+    letter-spacing: 1px;
+}
+li.name_lee > p {
+    font-weight: 300;
+    font-size: 12px;
+    color: #fff;
+    padding-bottom: 7px;
+    letter-spacing: 1px;
+}
+li.name_won > h3 {
+    font-weight: 400;
+    font-size: 15px;
+    color: #fff;
+    padding-bottom: 7px;
+    letter-spacing: 1px;
+}
+li.name_won > p{
+    font-weight: 300;
+    font-size: 12px;
+    color: #fff;
+    padding-bottom: 7px;
+    letter-spacing: 1px;
+}

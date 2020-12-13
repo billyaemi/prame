@@ -1,0 +1,171 @@
+li {
+    list-style: none;
+  }
+
+a:hover {
+    text-decoration: none;
+    background-color: none;
+    color: white;
+}
+a.google p:hover {
+    text-decoration: none;
+    background-color: none;
+    color: white;
+    transition: all 0.2s;
+}
+a.apple p:hover {
+    text-decoration: none;
+    background-color: none;
+    color: white;
+    transition: all 0.2s;
+}
+
+#fullpage > div.section > div.block-reveal > p.tit {
+    padding-bottom: 10px;
+}
+
+a.google {
+    width: 165px;
+    height: 44px;
+    border-radius: 30px;
+    border: 1px solid #333;
+    color: #333;
+    background-color: none;
+    text-align: center;
+    text-decoration: none;
+    float: left;
+    display: table;
+}
+a.apple {
+    margin-left: 10px;
+    width: 165px;
+    height: 44px;
+    border-radius: 30px;
+    border: 1px solid #333;
+    color: #333;
+    background-color: none;
+    text-align: center;
+    text-decoration: none;
+    float: left;
+    display: table;
+}
+a.google > p {
+    font-size: 15px;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+a.apple > p {
+    font-size: 15px;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+.subscribe {
+    float: left;
+    width: 30%;
+    margin-left: 18%;
+    margin-bottom: 6%;
+}
+.subscribe > li {
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 30px;
+}
+.subscribe > li > a {
+    display: block;
+    width: auto;
+    text-decoration: none;
+    margin: 5px;
+}
+.subscribe > li > a .screen {
+    position: relative;
+    overflow: hidden;
+}
+.subscribe > li > a .screen .basic {
+    position: absolute;
+    bottom: 150%;
+    left: 185px;
+    z-index: 2;
+    font-weight: 300;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 0;
+    transition: all .35s;
+}
+.subscribe > li > a .screen .standard {
+    position: absolute;
+    bottom: 150%;
+    left: 185px;
+    z-index: 2;
+    font-weight: 300;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 0;
+    transition: all .35s;
+}
+.subscribe > li > a .screen .premium {
+    position: absolute;
+    bottom: 150%;
+    left: 185px;
+    z-index: 2;
+    font-weight: 300;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 0;
+    transition: all .35s;
+}
+.subscribe > li > a .screen::after{
+    content:'';
+    display:block;
+    position:absolute;
+    top:0;left:0;
+    width:100%;height:100%;
+    background:#fff;
+    z-index:1;opacity:0;
+    transition: all .35s;
+}
+.subscribe > li > a:hover .basic {
+    bottom: 40%;
+}
+.subscribe > li > a:hover .standard {
+    bottom: 40%;
+}
+.subscribe > li > a:hover .premium {
+    bottom: 40%;
+}
+.subscribe > li > a:hover .screen::after {
+    opacity: 50%;
+}
+.sub_de {
+    padding-top: 5%;
+    float: left;
+    width: 40%;
+    margin-left: 3%;
+}
+.sub_detit1 {
+    font-size: 55px;
+    color: #333;
+    font-weight: 300;
+}
+.sub_detit2 {
+    font-size: 55px;
+    color: #333;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+.sub_detit3 {
+    font-size: 55px;
+    color: #DD2476;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.de_small {
+    font-size: 15px;
+    line-height: 1.5;
+    color: #333;
+    font-weight: 300;
+}
+.sub_btn {
+    margin-bottom: 10%;
+}
